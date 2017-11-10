@@ -6,6 +6,7 @@
   "license": "ISC",
   "repository": "https://github.com/geoffdavis92/geoffbot.git",
   "scripts": {
+    "prettier": "./node_modules/.bin/prettier *.{js,json} --write",
     "start": "probot run ./index.js",
     "test": "jest && standard"
   },
@@ -15,6 +16,7 @@
   "devDependencies": {
     "jest": "^21.2.1",
     "localtunnel": "^1.8.2",
+    "prettier": "^1.8.2",
     "standard": "^10.0.3"
   },
   "engines": {
@@ -22,8 +24,6 @@
     "npm": ">= 4.0.0"
   },
   "standard": {
-    "env": [
-      "jest"
-    ]
+    "env": ["jest"]
   }
 }
